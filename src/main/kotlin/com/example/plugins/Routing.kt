@@ -49,7 +49,7 @@ fun Application.configureRouting(
         }
 
         get("/AddWinByID/{id}") {
-            val id = call.parameters["id"] ?: return@post call.respondText(
+            val id = call.parameters["id"] ?: return call.respondText(
                 "Missing or malformed id", status = HttpStatusCode.BadRequest
             )
             try {
