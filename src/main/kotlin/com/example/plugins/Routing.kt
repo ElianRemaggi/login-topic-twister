@@ -48,7 +48,7 @@ fun Application.configureRouting(
             call.respondText( gson.toJson(respuesta))
         }
 
-        post("/AddWinByID/{id}") {
+        get("/AddWinByID/{id}") {
             val id = call.parameters["id"] ?: return@post call.respondText(
                 "Missing or malformed id", status = HttpStatusCode.BadRequest
             )
