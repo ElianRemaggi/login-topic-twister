@@ -30,6 +30,7 @@ dependencies {
     testImplementation("io.ktor:ktor-server-tests-jvm:$ktor_version")
     testImplementation("org.jetbrains.kotlin:kotlin-test-junit:$kotlin_version")
     implementation ("org.jetbrains.kotlin:kotlin-android-extensions:$kotlin_version")
+    testImplementation(kotlin("test"))
 
 }
 tasks.create("stage") {

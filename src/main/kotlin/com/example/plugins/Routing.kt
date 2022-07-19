@@ -23,12 +23,6 @@ fun Application.configureRouting(
         get("/") {
             call.respondText("Hello World!")
         }
-        get("/GetWorldBestPlayer"){
-            val player = Player("Elian",true, PlayerData(1,"elian"));
-            var gson = Gson()
-            var jsonString = gson.toJson(player)
-            call.respondText(jsonString)
-        }
 
         get("/GetPlayerByID/{id}"){
             val id = call.parameters["id"] ?: return@get call.respondText(
@@ -41,7 +35,7 @@ fun Application.configureRouting(
         get("/GetAllPlayers"){
             var gson = Gson()
             call.respondText( gson.toJson(playerRepository.GetAllPlayers()))
-        }
+        }/*
         get("/response"){
             var gson = Gson()
             val respuesta = "Texto codificado en servicio"
@@ -59,6 +53,6 @@ fun Application.configureRouting(
             catch (e : IOException){
                 println(e.message)
             }
-        }
+        }*/
     }
 }
