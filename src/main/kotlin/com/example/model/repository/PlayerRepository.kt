@@ -41,6 +41,7 @@ class PlayerRepository : IPlayerRepository {
         return playerList
     }
 
+
     override fun GetAllPlayers(): List<Player?>? {
         return this.Players
     }
@@ -72,6 +73,23 @@ class PlayerRepository : IPlayerRepository {
     override fun UpdatePlayerLookingForMatch(playerID: String?, lookingForMatch: Boolean?) {
         TODO("Not yet implemented")
     }
+
+        override fun GetPlayerRepository(): List<Player?>? {
+
+        //Get Data
+        val path: String = "src/main/kotlin/com/example/data/players.json"
+        val inputStream: InputStream = File(path).inputStream()
+        val response = inputStream.bufferedReader().use { it.readText() }
+
+        //Deserialize
+        var gson = Gson()
+        var playerList :MutableList<Player>
+        val itemType = object : TypeToken<MutableList<Player>>() {}.type
+        playerList = gson.fromJson(response, itemType  )
+
+        return playerList
+    }
+
 
     */
 
