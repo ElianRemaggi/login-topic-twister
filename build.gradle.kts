@@ -19,6 +19,7 @@ application {
 repositories {
     mavenCentral()
     maven { url = uri("https://maven.pkg.jetbrains.space/public/p/ktor/eap") }
+
 }
 
 dependencies {
@@ -29,10 +30,13 @@ dependencies {
     implementation("ch.qos.logback:logback-classic:$logback_version")
     testImplementation("io.ktor:ktor-server-tests-jvm:$ktor_version")
     testImplementation("org.jetbrains.kotlin:kotlin-test-junit:$kotlin_version")
+    testImplementation ("org.mockito:mockito-core:4.6.1")
     implementation ("org.jetbrains.kotlin:kotlin-android-extensions:$kotlin_version")
     testImplementation(kotlin("test"))
-
+    implementation("org.mongodb:mongodb-driver-sync:4.7.0")
 }
+
+
 tasks.create("stage") {
     dependsOn("installDist")
 }
