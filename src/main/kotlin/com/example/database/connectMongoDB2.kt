@@ -24,9 +24,8 @@ class connectMongoDB2 {
             val database = mongoClient.getDatabase("login")
             val collection = database.getCollection("users")
 
-            println("------------------------------")
             for(item in collection.find()){
-                println(item.toJson())
+                println(item.get("UserID"))
             }
 
             true
