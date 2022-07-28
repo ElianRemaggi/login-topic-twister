@@ -9,7 +9,10 @@ Routes:
     Return a List<Player> with all the players.
     
   /GetPlayerByID/"idPlayer"
-    Return a Player with specific ID
+    Return a Player with specific ID from Json files
+  
+  /GetPlayerByIDMongo/"idPlayer"
+    Return a Player with specific ID from MongoDB
   
   
     
