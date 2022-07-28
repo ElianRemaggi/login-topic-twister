@@ -40,16 +40,25 @@ fun Application.configureRouting(
             call.respondText( gson.toJson(playerRepository.GetAllPlayers()))
         }
         get("/GetPlayerByIDMongo/{id}"){
-            val id = call.parameters["id"] ?: return@get call.respondText(
-                "Missing or malformed id", status = HttpStatusCode.BadRequest
-            )
-            var gson = Gson()
-            var userIDRepository : IUserIDRepository
-            userIDRepository = UserIDRepository()
+            try {
+                val id = call.parameters["id"] ?: return@get call.respondText(
+                    "Missing or malformed id", status = HttpStatusCode.BadRequest
+                )
+                var gson = Gson()
+                var userIDRepository : IUserIDRepository
+                userIDRepository = UserIDRepository()
 
-            var validateUserID = ValidateUserID(userIDRepository)
+                var validateUserID = ValidateUserID(userIDRepository)
 
-            validateUserID.Execute(id.toString())?.let { it -> call.respondText(gson.toJson(it))}
+                if(validateUserID.Execute(id)){
+                    val player = Player(id)
+                    call.respondText(gson.toJson(player))
+                }
+                call.respondText("UserID Incorrecta")
+            } catch (e: java.lang.Exception){
+                throw (e)
+            }
+
         }
     /*
         get("/response"){

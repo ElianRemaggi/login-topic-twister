@@ -12,6 +12,11 @@ class Player {
         this.LookingForMatch = _lookingForMatch
         this.PlayerData = _playerData
     }
+    constructor(_userID: String){
+        this.UserID = _userID
+        this.LookingForMatch = true
+        this.PlayerData = PlayerData(1,"")
+    }
 
     fun getUserID(): String {
         return this.UserID
