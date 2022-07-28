@@ -14,6 +14,10 @@ class UserIDRepositoryTest {
         var userIDList : MutableList<String>
         //Act
         userIDList = userIDRepository.GetUserIDList() as MutableList<String>
+
+        for(item in userIDList){
+            println(item)
+        }
         //Assert
         Assert.assertTrue(userIDList.count() > 0)
     }

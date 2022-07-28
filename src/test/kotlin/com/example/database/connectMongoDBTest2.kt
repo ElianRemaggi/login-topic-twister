@@ -13,6 +13,7 @@ class connectMongoDBTest2 {
         var response : Boolean
         //Act
         response = connection.connectTest()
+        println("----->"+response)
         //Assert
         Assert.assertTrue(response)
     }
