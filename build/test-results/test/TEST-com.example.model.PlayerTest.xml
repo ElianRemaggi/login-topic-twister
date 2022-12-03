@@ -1,8 +1,30 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="com.example.model.PlayerTest" tests="2" skipped="0" failures="0" errors="0" timestamp="2022-08-08T22:22:49" hostname="DESKTOP-0IN140F" time="0.0">
+<testsuite name="com.example.model.PlayerTest" tests="2" skipped="0" failures="0" errors="0" timestamp="2022-10-18T23:17:44" hostname="DESKTOP-0IN140F" time="0.002">
   <properties/>
-  <testcase name="PlayerConstructorShouldInstantiateAPlayer" classname="com.example.model.PlayerTest" time="0.0"/>
+  <testcase name="PlayerConstructorShouldInstantiateAPlayer" classname="com.example.model.PlayerTest" time="0.001"/>
   <testcase name="PlayerGetMethodsShouldReturnExpectedType" classname="com.example.model.PlayerTest" time="0.0"/>
-  <system-out><![CDATA[]]></system-out>
+  <system-out><![CDATA[2022-10-18 20:17:44.273 [cluster-ClusterId{value='634f33faebe90b337364fca9', description='null'}-srv-topictwister.rbqoldd.mongodb.net] INFO  org.mongodb.driver.cluster - Exception while resolving SRV records
+com.mongodb.MongoConfigurationException: Failed looking up SRV record for '_mongodb._tcp.topictwister.rbqoldd.mongodb.net'.
+	at com.mongodb.internal.dns.DefaultDnsResolver.resolveHostFromSrvRecords(DefaultDnsResolver.java:92)
+	at com.mongodb.internal.connection.DefaultDnsSrvRecordMonitor$DnsSrvRecordMonitorRunnable.run(DefaultDnsSrvRecordMonitor.java:80)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+Caused by: com.mongodb.spi.dns.DnsWithResponseCodeException: DNS name not found [response code 3]
+	at com.mongodb.internal.dns.JndiDnsClient.getResourceRecordData(JndiDnsClient.java:52)
+	at com.mongodb.internal.dns.DefaultDnsResolver.resolveHostFromSrvRecords(DefaultDnsResolver.java:74)
+	... 2 common frames omitted
+Caused by: javax.naming.NameNotFoundException: DNS name not found [response code 3]
+	at jdk.naming.dns/com.sun.jndi.dns.DnsClient.checkResponseCode(DnsClient.java:664)
+	at jdk.naming.dns/com.sun.jndi.dns.DnsClient.isMatchResponse(DnsClient.java:582)
+	at jdk.naming.dns/com.sun.jndi.dns.DnsClient.doUdpQuery(DnsClient.java:434)
+	at jdk.naming.dns/com.sun.jndi.dns.DnsClient.query(DnsClient.java:216)
+	at jdk.naming.dns/com.sun.jndi.dns.Resolver.query(Resolver.java:81)
+	at jdk.naming.dns/com.sun.jndi.dns.DnsContext.c_getAttributes(DnsContext.java:434)
+	at java.naming/com.sun.jndi.toolkit.ctx.ComponentDirContext.p_getAttributes(ComponentDirContext.java:235)
+	at java.naming/com.sun.jndi.toolkit.ctx.PartialCompositeDirContext.getAttributes(PartialCompositeDirContext.java:141)
+	at java.naming/com.sun.jndi.toolkit.ctx.PartialCompositeDirContext.getAttributes(PartialCompositeDirContext.java:129)
+	at java.naming/javax.naming.directory.InitialDirContext.getAttributes(InitialDirContext.java:171)
+	at com.mongodb.internal.dns.JndiDnsClient.getResourceRecordData(JndiDnsClient.java:41)
+	... 3 common frames omitted
+]]></system-out>
   <system-err><![CDATA[]]></system-err>
 </testsuite>

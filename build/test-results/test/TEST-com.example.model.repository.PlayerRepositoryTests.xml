@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="com.example.model.repository.PlayerRepositoryTests" tests="1" skipped="0" failures="0" errors="0" timestamp="2022-08-08T22:22:49" hostname="DESKTOP-0IN140F" time="0.081">
+<testsuite name="com.example.model.repository.PlayerRepositoryTests" tests="1" skipped="0" failures="0" errors="0" timestamp="2022-10-18T23:17:44" hostname="DESKTOP-0IN140F" time="0.076">
   <properties/>
-  <testcase name="FindPlayerByIDShouldReturnAPlayer" classname="com.example.model.repository.PlayerRepositoryTests" time="0.081"/>
+  <testcase name="FindPlayerByIDShouldReturnAPlayer" classname="com.example.model.repository.PlayerRepositoryTests" time="0.076"/>
   <system-out><![CDATA[id lgarcia
 ]]></system-out>
   <system-err><![CDATA[]]></system-err>
