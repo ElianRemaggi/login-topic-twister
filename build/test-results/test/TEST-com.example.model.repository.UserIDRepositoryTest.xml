@@ -1,205 +1,54 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="com.example.model.repository.UserIDRepositoryTest" tests="1" skipped="0" failures="1" errors="0" timestamp="2022-10-18T23:17:44" hostname="DESKTOP-0IN140F" time="30.021">
+<testsuite name="com.example.model.repository.UserIDRepositoryTest" tests="1" skipped="0" failures="0" errors="0" timestamp="2022-08-08T22:22:49" hostname="DESKTOP-0IN140F" time="0.492">
   <properties/>
-  <testcase name="userIdRepositoryShouldContainItemsInUserIDList" classname="com.example.model.repository.UserIDRepositoryTest" time="30.021">
-    <failure message="com.mongodb.MongoTimeoutException: Timed out after 30000 ms while waiting to connect. Client view of cluster state is {type=UNKNOWN, srvResolutionException=com.mongodb.MongoConfigurationException: Failed looking up SRV record for '_mongodb._tcp.topictwister.rbqoldd.mongodb.net'., servers=[]" type="com.mongodb.MongoTimeoutException">com.mongodb.MongoTimeoutException: Timed out after 30000 ms while waiting to connect. Client view of cluster state is {type=UNKNOWN, srvResolutionException=com.mongodb.MongoConfigurationException: Failed looking up SRV record for '_mongodb._tcp.topictwister.rbqoldd.mongodb.net'., servers=[]
-	at app//com.mongodb.internal.connection.BaseCluster.getDescription(BaseCluster.java:181)
-	at app//com.mongodb.internal.connection.AbstractMultiServerCluster.getDescription(AbstractMultiServerCluster.java:50)
-	at app//com.mongodb.client.internal.MongoClientDelegate.getConnectedClusterDescription(MongoClientDelegate.java:144)
-	at app//com.mongodb.client.internal.MongoClientDelegate.createClientSession(MongoClientDelegate.java:101)
-	at app//com.mongodb.client.internal.MongoClientDelegate$DelegateOperationExecutor.getClientSession(MongoClientDelegate.java:291)
-	at app//com.mongodb.client.internal.MongoClientDelegate$DelegateOperationExecutor.execute(MongoClientDelegate.java:183)
-	at app//com.mongodb.client.internal.MongoIterableImpl.execute(MongoIterableImpl.java:135)
-	at app//com.mongodb.client.internal.MongoIterableImpl.iterator(MongoIterableImpl.java:92)
-	at app//com.example.model.repository.UserIDRepository.GetUserRepository(UserIDRepository.kt:38)
-	at app//com.example.model.repository.UserIDRepository.&lt;init&gt;(UserIDRepository.kt:17)
-	at app//com.example.model.repository.UserIDRepositoryTest.userIdRepositoryShouldContainItemsInUserIDList(UserIDRepositoryTest.kt:13)
-	at java.base@17.0.3/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at java.base@17.0.3/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
-	at java.base@17.0.3/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.base@17.0.3/java.lang.reflect.Method.invoke(Method.java:568)
-	at app//org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:59)
-	at app//org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)
-	at app//org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:56)
-	at app//org.junit.internal.runners.statements.InvokeMethod.evaluate(InvokeMethod.java:17)
-	at app//org.junit.runners.ParentRunner$3.evaluate(ParentRunner.java:306)
-	at app//org.junit.runners.BlockJUnit4ClassRunner$1.evaluate(BlockJUnit4ClassRunner.java:100)
-	at app//org.junit.runners.ParentRunner.runLeaf(ParentRunner.java:366)
-	at app//org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:103)
-	at app//org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:63)
-	at app//org.junit.runners.ParentRunner$4.run(ParentRunner.java:331)
-	at app//org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:79)
-	at app//org.junit.runners.ParentRunner.runChildren(ParentRunner.java:329)
-	at app//org.junit.runners.ParentRunner.access$100(ParentRunner.java:66)
-	at app//org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:293)
-	at app//org.junit.runners.ParentRunner$3.evaluate(ParentRunner.java:306)
-	at app//org.junit.runners.ParentRunner.run(ParentRunner.java:413)
-	at org.gradle.api.internal.tasks.testing.junit.JUnitTestClassExecutor.runTestClass(JUnitTestClassExecutor.java:110)
-	at org.gradle.api.internal.tasks.testing.junit.JUnitTestClassExecutor.execute(JUnitTestClassExecutor.java:58)
-	at org.gradle.api.internal.tasks.testing.junit.JUnitTestClassExecutor.execute(JUnitTestClassExecutor.java:38)
-	at org.gradle.api.internal.tasks.testing.junit.AbstractJUnitTestClassProcessor.processTestClass(AbstractJUnitTestClassProcessor.java:62)
-	at org.gradle.api.internal.tasks.testing.SuiteTestClassProcessor.processTestClass(SuiteTestClassProcessor.java:51)
-	at java.base@17.0.3/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at java.base@17.0.3/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
-	at java.base@17.0.3/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.base@17.0.3/java.lang.reflect.Method.invoke(Method.java:568)
-	at org.gradle.internal.dispatch.ReflectionDispatch.dispatch(ReflectionDispatch.java:36)
-	at org.gradle.internal.dispatch.ReflectionDispatch.dispatch(ReflectionDispatch.java:24)
-	at org.gradle.internal.dispatch.ContextClassLoaderDispatch.dispatch(ContextClassLoaderDispatch.java:33)
-	at org.gradle.internal.dispatch.ProxyDispatchAdapter$DispatchingInvocationHandler.invoke(ProxyDispatchAdapter.java:94)
-	at jdk.proxy1/jdk.proxy1.$Proxy2.processTestClass(Unknown Source)
-	at org.gradle.api.internal.tasks.testing.worker.TestWorker$2.run(TestWorker.java:176)
-	at org.gradle.api.internal.tasks.testing.worker.TestWorker.executeAndMaintainThreadName(TestWorker.java:129)
-	at org.gradle.api.internal.tasks.testing.worker.TestWorker.execute(TestWorker.java:100)
-	at org.gradle.api.internal.tasks.testing.worker.TestWorker.execute(TestWorker.java:60)
-	at org.gradle.process.internal.worker.child.ActionExecutionWorker.execute(ActionExecutionWorker.java:56)
-	at org.gradle.process.internal.worker.child.SystemApplicationClassLoaderWorker.call(SystemApplicationClassLoaderWorker.java:133)
-	at org.gradle.process.internal.worker.child.SystemApplicationClassLoaderWorker.call(SystemApplicationClassLoaderWorker.java:71)
-	at app//worker.org.gradle.process.internal.worker.GradleWorkerMain.run(GradleWorkerMain.java:69)
-	at app//worker.org.gradle.process.internal.worker.GradleWorkerMain.main(GradleWorkerMain.java:74)
-</failure>
-  </testcase>
-  <system-out><![CDATA[2022-10-18 20:17:44.660 [Test worker] INFO  org.mongodb.driver.client - MongoClient with metadata {"driver": {"name": "mongo-java-driver|sync", "version": "4.7.0"}, "os": {"type": "Windows", "name": "Windows 10", "architecture": "amd64", "version": "10.0"}, "platform": "Java/Amazon.com Inc./17.0.3+6-LTS"} created with settings MongoClientSettings{readPreference=primary, writeConcern=WriteConcern{w=majority, wTimeout=null ms, journal=null}, retryWrites=true, retryReads=true, readConcern=ReadConcern{level=null}, credential=MongoCredential{mechanism=null, userName='root', source='admin', password=<hidden>, mechanismProperties=<hidden>}, streamFactoryFactory=null, commandListeners=[], codecRegistry=ProvidersCodecRegistry{codecProviders=[ValueCodecProvider{}, BsonValueCodecProvider{}, DBRefCodecProvider{}, DBObjectCodecProvider{}, DocumentCodecProvider{}, IterableCodecProvider{}, MapCodecProvider{}, GeoJsonCodecProvider{}, GridFSFileCodecProvider{}, Jsr310CodecProvider{}, JsonObjectCodecProvider{}, BsonCodecProvider{}, EnumCodecProvider{}, com.mongodb.Jep395RecordCodecProvider@ecfbe91]}, clusterSettings={hosts=[127.0.0.1:27017], srvHost=topictwister.rbqoldd.mongodb.net, srvServiceName=mongodb, mode=MULTIPLE, requiredClusterType=UNKNOWN, requiredReplicaSetName='null', serverSelector='null', clusterListeners='[]', serverSelectionTimeout='30000 ms', localThreshold='30000 ms'}, socketSettings=SocketSettings{connectTimeoutMS=10000, readTimeoutMS=0, receiveBufferSize=0, sendBufferSize=0}, heartbeatSocketSettings=SocketSettings{connectTimeoutMS=10000, readTimeoutMS=10000, receiveBufferSize=0, sendBufferSize=0}, connectionPoolSettings=ConnectionPoolSettings{maxSize=100, minSize=0, maxWaitTimeMS=120000, maxConnectionLifeTimeMS=0, maxConnectionIdleTimeMS=0, maintenanceInitialDelayMS=0, maintenanceFrequencyMS=60000, connectionPoolListeners=[], maxConnecting=2}, serverSettings=ServerSettings{heartbeatFrequencyMS=10000, minHeartbeatFrequencyMS=500, serverListeners='[]', serverMonitorListeners='[]'}, sslSettings=SslSettings{enabled=true, invalidHostNameAllowed=false, context=null}, applicationName='null', compressorList=[], uuidRepresentation=UNSPECIFIED, serverApi=ServerApi{version=V1, deprecationErrors=null, strict=null}, autoEncryptionSettings=null, contextProvider=null}
-2022-10-18 20:17:44.660 [Test worker] INFO  org.mongodb.driver.cluster - Cluster description not yet available. Waiting for 30000 ms before timing out
-2022-10-18 20:17:44.663 [cluster-ClusterId{value='634f3418ebe90b337364fcaa', description='null'}-srv-topictwister.rbqoldd.mongodb.net] DEBUG org.mongodb.driver.cluster - Updating cluster description to  {type=UNKNOWN, srvResolutionException=com.mongodb.MongoConfigurationException: Failed looking up SRV record for '_mongodb._tcp.topictwister.rbqoldd.mongodb.net'., servers=[]
-2022-10-18 20:17:44.664 [cluster-ClusterId{value='634f3418ebe90b337364fcaa', description='null'}-srv-topictwister.rbqoldd.mongodb.net] INFO  org.mongodb.driver.cluster - Exception while resolving SRV records
-com.mongodb.MongoConfigurationException: Failed looking up SRV record for '_mongodb._tcp.topictwister.rbqoldd.mongodb.net'.
-	at com.mongodb.internal.dns.DefaultDnsResolver.resolveHostFromSrvRecords(DefaultDnsResolver.java:92)
-	at com.mongodb.internal.connection.DefaultDnsSrvRecordMonitor$DnsSrvRecordMonitorRunnable.run(DefaultDnsSrvRecordMonitor.java:80)
-	at java.base/java.lang.Thread.run(Thread.java:833)
-Caused by: com.mongodb.spi.dns.DnsWithResponseCodeException: DNS name not found [response code 3]
-	at com.mongodb.internal.dns.JndiDnsClient.getResourceRecordData(JndiDnsClient.java:52)
-	at com.mongodb.internal.dns.DefaultDnsResolver.resolveHostFromSrvRecords(DefaultDnsResolver.java:74)
-	... 2 common frames omitted
-Caused by: javax.naming.NameNotFoundException: DNS name not found [response code 3]
-	at jdk.naming.dns/com.sun.jndi.dns.DnsClient.checkResponseCode(DnsClient.java:664)
-	at jdk.naming.dns/com.sun.jndi.dns.DnsClient.isMatchResponse(DnsClient.java:582)
-	at jdk.naming.dns/com.sun.jndi.dns.DnsClient.doUdpQuery(DnsClient.java:434)
-	at jdk.naming.dns/com.sun.jndi.dns.DnsClient.query(DnsClient.java:216)
-	at jdk.naming.dns/com.sun.jndi.dns.Resolver.query(Resolver.java:81)
-	at jdk.naming.dns/com.sun.jndi.dns.DnsContext.c_getAttributes(DnsContext.java:434)
-	at java.naming/com.sun.jndi.toolkit.ctx.ComponentDirContext.p_getAttributes(ComponentDirContext.java:235)
-	at java.naming/com.sun.jndi.toolkit.ctx.PartialCompositeDirContext.getAttributes(PartialCompositeDirContext.java:141)
-	at java.naming/com.sun.jndi.toolkit.ctx.PartialCompositeDirContext.getAttributes(PartialCompositeDirContext.java:129)
-	at java.naming/javax.naming.directory.InitialDirContext.getAttributes(InitialDirContext.java:171)
-	at com.mongodb.internal.dns.JndiDnsClient.getResourceRecordData(JndiDnsClient.java:41)
-	... 3 common frames omitted
-2022-10-18 20:17:54.286 [cluster-ClusterId{value='634f33faebe90b337364fca9', description='null'}-srv-topictwister.rbqoldd.mongodb.net] DEBUG org.mongodb.driver.cluster - Updating cluster description to  {type=UNKNOWN, srvResolutionException=com.mongodb.MongoConfigurationException: Failed looking up SRV record for '_mongodb._tcp.topictwister.rbqoldd.mongodb.net'., servers=[]
-2022-10-18 20:17:54.287 [cluster-ClusterId{value='634f33faebe90b337364fca9', description='null'}-srv-topictwister.rbqoldd.mongodb.net] INFO  org.mongodb.driver.cluster - Exception while resolving SRV records
-com.mongodb.MongoConfigurationException: Failed looking up SRV record for '_mongodb._tcp.topictwister.rbqoldd.mongodb.net'.
-	at com.mongodb.internal.dns.DefaultDnsResolver.resolveHostFromSrvRecords(DefaultDnsResolver.java:92)
-	at com.mongodb.internal.connection.DefaultDnsSrvRecordMonitor$DnsSrvRecordMonitorRunnable.run(DefaultDnsSrvRecordMonitor.java:80)
-	at java.base/java.lang.Thread.run(Thread.java:833)
-Caused by: com.mongodb.spi.dns.DnsWithResponseCodeException: DNS name not found [response code 3]
-	at com.mongodb.internal.dns.JndiDnsClient.getResourceRecordData(JndiDnsClient.java:52)
-	at com.mongodb.internal.dns.DefaultDnsResolver.resolveHostFromSrvRecords(DefaultDnsResolver.java:74)
-	... 2 common frames omitted
-Caused by: javax.naming.NameNotFoundException: DNS name not found [response code 3]
-	at jdk.naming.dns/com.sun.jndi.dns.DnsClient.checkResponseCode(DnsClient.java:664)
-	at jdk.naming.dns/com.sun.jndi.dns.DnsClient.isMatchResponse(DnsClient.java:582)
-	at jdk.naming.dns/com.sun.jndi.dns.DnsClient.doUdpQuery(DnsClient.java:434)
-	at jdk.naming.dns/com.sun.jndi.dns.DnsClient.query(DnsClient.java:216)
-	at jdk.naming.dns/com.sun.jndi.dns.Resolver.query(Resolver.java:81)
-	at jdk.naming.dns/com.sun.jndi.dns.DnsContext.c_getAttributes(DnsContext.java:434)
-	at java.naming/com.sun.jndi.toolkit.ctx.ComponentDirContext.p_getAttributes(ComponentDirContext.java:235)
-	at java.naming/com.sun.jndi.toolkit.ctx.PartialCompositeDirContext.getAttributes(PartialCompositeDirContext.java:141)
-	at java.naming/com.sun.jndi.toolkit.ctx.PartialCompositeDirContext.getAttributes(PartialCompositeDirContext.java:129)
-	at java.naming/javax.naming.directory.InitialDirContext.getAttributes(InitialDirContext.java:171)
-	at com.mongodb.internal.dns.JndiDnsClient.getResourceRecordData(JndiDnsClient.java:41)
-	... 3 common frames omitted
-2022-10-18 20:17:54.670 [cluster-ClusterId{value='634f3418ebe90b337364fcaa', description='null'}-srv-topictwister.rbqoldd.mongodb.net] DEBUG org.mongodb.driver.cluster - Updating cluster description to  {type=UNKNOWN, srvResolutionException=com.mongodb.MongoConfigurationException: Failed looking up SRV record for '_mongodb._tcp.topictwister.rbqoldd.mongodb.net'., servers=[]
-2022-10-18 20:17:54.670 [cluster-ClusterId{value='634f3418ebe90b337364fcaa', description='null'}-srv-topictwister.rbqoldd.mongodb.net] INFO  org.mongodb.driver.cluster - Exception while resolving SRV records
-com.mongodb.MongoConfigurationException: Failed looking up SRV record for '_mongodb._tcp.topictwister.rbqoldd.mongodb.net'.
-	at com.mongodb.internal.dns.DefaultDnsResolver.resolveHostFromSrvRecords(DefaultDnsResolver.java:92)
-	at com.mongodb.internal.connection.DefaultDnsSrvRecordMonitor$DnsSrvRecordMonitorRunnable.run(DefaultDnsSrvRecordMonitor.java:80)
-	at java.base/java.lang.Thread.run(Thread.java:833)
-Caused by: com.mongodb.spi.dns.DnsWithResponseCodeException: DNS name not found [response code 3]
-	at com.mongodb.internal.dns.JndiDnsClient.getResourceRecordData(JndiDnsClient.java:52)
-	at com.mongodb.internal.dns.DefaultDnsResolver.resolveHostFromSrvRecords(DefaultDnsResolver.java:74)
-	... 2 common frames omitted
-Caused by: javax.naming.NameNotFoundException: DNS name not found [response code 3]
-	at jdk.naming.dns/com.sun.jndi.dns.DnsClient.checkResponseCode(DnsClient.java:664)
-	at jdk.naming.dns/com.sun.jndi.dns.DnsClient.isMatchResponse(DnsClient.java:582)
-	at jdk.naming.dns/com.sun.jndi.dns.DnsClient.doUdpQuery(DnsClient.java:434)
-	at jdk.naming.dns/com.sun.jndi.dns.DnsClient.query(DnsClient.java:216)
-	at jdk.naming.dns/com.sun.jndi.dns.Resolver.query(Resolver.java:81)
-	at jdk.naming.dns/com.sun.jndi.dns.DnsContext.c_getAttributes(DnsContext.java:434)
-	at java.naming/com.sun.jndi.toolkit.ctx.ComponentDirContext.p_getAttributes(ComponentDirContext.java:235)
-	at java.naming/com.sun.jndi.toolkit.ctx.PartialCompositeDirContext.getAttributes(PartialCompositeDirContext.java:141)
-	at java.naming/com.sun.jndi.toolkit.ctx.PartialCompositeDirContext.getAttributes(PartialCompositeDirContext.java:129)
-	at java.naming/javax.naming.directory.InitialDirContext.getAttributes(InitialDirContext.java:171)
-	at com.mongodb.internal.dns.JndiDnsClient.getResourceRecordData(JndiDnsClient.java:41)
-	... 3 common frames omitted
-2022-10-18 20:18:04.301 [cluster-ClusterId{value='634f33faebe90b337364fca9', description='null'}-srv-topictwister.rbqoldd.mongodb.net] DEBUG org.mongodb.driver.cluster - Updating cluster description to  {type=UNKNOWN, srvResolutionException=com.mongodb.MongoConfigurationException: Failed looking up SRV record for '_mongodb._tcp.topictwister.rbqoldd.mongodb.net'., servers=[]
-2022-10-18 20:18:04.301 [cluster-ClusterId{value='634f33faebe90b337364fca9', description='null'}-srv-topictwister.rbqoldd.mongodb.net] INFO  org.mongodb.driver.cluster - Exception while resolving SRV records
-com.mongodb.MongoConfigurationException: Failed looking up SRV record for '_mongodb._tcp.topictwister.rbqoldd.mongodb.net'.
-	at com.mongodb.internal.dns.DefaultDnsResolver.resolveHostFromSrvRecords(DefaultDnsResolver.java:92)
-	at com.mongodb.internal.connection.DefaultDnsSrvRecordMonitor$DnsSrvRecordMonitorRunnable.run(DefaultDnsSrvRecordMonitor.java:80)
-	at java.base/java.lang.Thread.run(Thread.java:833)
-Caused by: com.mongodb.spi.dns.DnsWithResponseCodeException: DNS name not found [response code 3]
-	at com.mongodb.internal.dns.JndiDnsClient.getResourceRecordData(JndiDnsClient.java:52)
-	at com.mongodb.internal.dns.DefaultDnsResolver.resolveHostFromSrvRecords(DefaultDnsResolver.java:74)
-	... 2 common frames omitted
-Caused by: javax.naming.NameNotFoundException: DNS name not found [response code 3]
-	at jdk.naming.dns/com.sun.jndi.dns.DnsClient.checkResponseCode(DnsClient.java:664)
-	at jdk.naming.dns/com.sun.jndi.dns.DnsClient.isMatchResponse(DnsClient.java:582)
-	at jdk.naming.dns/com.sun.jndi.dns.DnsClient.doUdpQuery(DnsClient.java:434)
-	at jdk.naming.dns/com.sun.jndi.dns.DnsClient.query(DnsClient.java:216)
-	at jdk.naming.dns/com.sun.jndi.dns.Resolver.query(Resolver.java:81)
-	at jdk.naming.dns/com.sun.jndi.dns.DnsContext.c_getAttributes(DnsContext.java:434)
-	at java.naming/com.sun.jndi.toolkit.ctx.ComponentDirContext.p_getAttributes(ComponentDirContext.java:235)
-	at java.naming/com.sun.jndi.toolkit.ctx.PartialCompositeDirContext.getAttributes(PartialCompositeDirContext.java:141)
-	at java.naming/com.sun.jndi.toolkit.ctx.PartialCompositeDirContext.getAttributes(PartialCompositeDirContext.java:129)
-	at java.naming/javax.naming.directory.InitialDirContext.getAttributes(InitialDirContext.java:171)
-	at com.mongodb.internal.dns.JndiDnsClient.getResourceRecordData(JndiDnsClient.java:41)
-	... 3 common frames omitted
-2022-10-18 20:18:04.679 [cluster-ClusterId{value='634f3418ebe90b337364fcaa', description='null'}-srv-topictwister.rbqoldd.mongodb.net] DEBUG org.mongodb.driver.cluster - Updating cluster description to  {type=UNKNOWN, srvResolutionException=com.mongodb.MongoConfigurationException: Failed looking up SRV record for '_mongodb._tcp.topictwister.rbqoldd.mongodb.net'., servers=[]
-2022-10-18 20:18:04.680 [cluster-ClusterId{value='634f3418ebe90b337364fcaa', description='null'}-srv-topictwister.rbqoldd.mongodb.net] INFO  org.mongodb.driver.cluster - Exception while resolving SRV records
-com.mongodb.MongoConfigurationException: Failed looking up SRV record for '_mongodb._tcp.topictwister.rbqoldd.mongodb.net'.
-	at com.mongodb.internal.dns.DefaultDnsResolver.resolveHostFromSrvRecords(DefaultDnsResolver.java:92)
-	at com.mongodb.internal.connection.DefaultDnsSrvRecordMonitor$DnsSrvRecordMonitorRunnable.run(DefaultDnsSrvRecordMonitor.java:80)
-	at java.base/java.lang.Thread.run(Thread.java:833)
-Caused by: com.mongodb.spi.dns.DnsWithResponseCodeException: DNS name not found [response code 3]
-	at com.mongodb.internal.dns.JndiDnsClient.getResourceRecordData(JndiDnsClient.java:52)
-	at com.mongodb.internal.dns.DefaultDnsResolver.resolveHostFromSrvRecords(DefaultDnsResolver.java:74)
-	... 2 common frames omitted
-Caused by: javax.naming.NameNotFoundException: DNS name not found [response code 3]
-	at jdk.naming.dns/com.sun.jndi.dns.DnsClient.checkResponseCode(DnsClient.java:664)
-	at jdk.naming.dns/com.sun.jndi.dns.DnsClient.isMatchResponse(DnsClient.java:582)
-	at jdk.naming.dns/com.sun.jndi.dns.DnsClient.doUdpQuery(DnsClient.java:434)
-	at jdk.naming.dns/com.sun.jndi.dns.DnsClient.query(DnsClient.java:216)
-	at jdk.naming.dns/com.sun.jndi.dns.Resolver.query(Resolver.java:81)
-	at jdk.naming.dns/com.sun.jndi.dns.DnsContext.c_getAttributes(DnsContext.java:434)
-	at java.naming/com.sun.jndi.toolkit.ctx.ComponentDirContext.p_getAttributes(ComponentDirContext.java:235)
-	at java.naming/com.sun.jndi.toolkit.ctx.PartialCompositeDirContext.getAttributes(PartialCompositeDirContext.java:141)
-	at java.naming/com.sun.jndi.toolkit.ctx.PartialCompositeDirContext.getAttributes(PartialCompositeDirContext.java:129)
-	at java.naming/javax.naming.directory.InitialDirContext.getAttributes(InitialDirContext.java:171)
-	at com.mongodb.internal.dns.JndiDnsClient.getResourceRecordData(JndiDnsClient.java:41)
-	... 3 common frames omitted
-2022-10-18 20:18:14.319 [cluster-ClusterId{value='634f33faebe90b337364fca9', description='null'}-srv-topictwister.rbqoldd.mongodb.net] DEBUG org.mongodb.driver.cluster - Updating cluster description to  {type=UNKNOWN, srvResolutionException=com.mongodb.MongoConfigurationException: Failed looking up SRV record for '_mongodb._tcp.topictwister.rbqoldd.mongodb.net'., servers=[]
-2022-10-18 20:18:14.320 [cluster-ClusterId{value='634f33faebe90b337364fca9', description='null'}-srv-topictwister.rbqoldd.mongodb.net] INFO  org.mongodb.driver.cluster - Exception while resolving SRV records
-com.mongodb.MongoConfigurationException: Failed looking up SRV record for '_mongodb._tcp.topictwister.rbqoldd.mongodb.net'.
-	at com.mongodb.internal.dns.DefaultDnsResolver.resolveHostFromSrvRecords(DefaultDnsResolver.java:92)
-	at com.mongodb.internal.connection.DefaultDnsSrvRecordMonitor$DnsSrvRecordMonitorRunnable.run(DefaultDnsSrvRecordMonitor.java:80)
-	at java.base/java.lang.Thread.run(Thread.java:833)
-Caused by: com.mongodb.spi.dns.DnsWithResponseCodeException: DNS name not found [response code 3]
-	at com.mongodb.internal.dns.JndiDnsClient.getResourceRecordData(JndiDnsClient.java:52)
-	at com.mongodb.internal.dns.DefaultDnsResolver.resolveHostFromSrvRecords(DefaultDnsResolver.java:74)
-	... 2 common frames omitted
-Caused by: javax.naming.NameNotFoundException: DNS name not found [response code 3]
-	at jdk.naming.dns/com.sun.jndi.dns.DnsClient.checkResponseCode(DnsClient.java:664)
-	at jdk.naming.dns/com.sun.jndi.dns.DnsClient.isMatchResponse(DnsClient.java:582)
-	at jdk.naming.dns/com.sun.jndi.dns.DnsClient.doUdpQuery(DnsClient.java:434)
-	at jdk.naming.dns/com.sun.jndi.dns.DnsClient.query(DnsClient.java:216)
-	at jdk.naming.dns/com.sun.jndi.dns.Resolver.query(Resolver.java:81)
-	at jdk.naming.dns/com.sun.jndi.dns.DnsContext.c_getAttributes(DnsContext.java:434)
-	at java.naming/com.sun.jndi.toolkit.ctx.ComponentDirContext.p_getAttributes(ComponentDirContext.java:235)
-	at java.naming/com.sun.jndi.toolkit.ctx.PartialCompositeDirContext.getAttributes(PartialCompositeDirContext.java:141)
-	at java.naming/com.sun.jndi.toolkit.ctx.PartialCompositeDirContext.getAttributes(PartialCompositeDirContext.java:129)
-	at java.naming/javax.naming.directory.InitialDirContext.getAttributes(InitialDirContext.java:171)
-	at com.mongodb.internal.dns.JndiDnsClient.getResourceRecordData(JndiDnsClient.java:41)
-	... 3 common frames omitted
-Timed out after 30000 ms while waiting to connect. Client view of cluster state is {type=UNKNOWN, srvResolutionException=com.mongodb.MongoConfigurationException: Failed looking up SRV record for '_mongodb._tcp.topictwister.rbqoldd.mongodb.net'., servers=[]
+  <testcase name="userIdRepositoryShouldContainItemsInUserIDList" classname="com.example.model.repository.UserIDRepositoryTest" time="0.492"/>
+  <system-out><![CDATA[2022-08-08 19:22:49.675 [Test worker] INFO  org.mongodb.driver.client - MongoClient with metadata {"driver": {"name": "mongo-java-driver|sync", "version": "4.7.0"}, "os": {"type": "Windows", "name": "Windows 10", "architecture": "amd64", "version": "10.0"}, "platform": "Java/Amazon.com Inc./17.0.3+6-LTS"} created with settings MongoClientSettings{readPreference=primary, writeConcern=WriteConcern{w=majority, wTimeout=null ms, journal=null}, retryWrites=true, retryReads=true, readConcern=ReadConcern{level=null}, credential=MongoCredential{mechanism=null, userName='root', source='admin', password=<hidden>, mechanismProperties=<hidden>}, streamFactoryFactory=null, commandListeners=[], codecRegistry=ProvidersCodecRegistry{codecProviders=[ValueCodecProvider{}, BsonValueCodecProvider{}, DBRefCodecProvider{}, DBObjectCodecProvider{}, DocumentCodecProvider{}, IterableCodecProvider{}, MapCodecProvider{}, GeoJsonCodecProvider{}, GridFSFileCodecProvider{}, Jsr310CodecProvider{}, JsonObjectCodecProvider{}, BsonCodecProvider{}, EnumCodecProvider{}, com.mongodb.Jep395RecordCodecProvider@15923407]}, clusterSettings={hosts=[127.0.0.1:27017], srvHost=topictwister.rbqoldd.mongodb.net, srvServiceName=mongodb, mode=MULTIPLE, requiredClusterType=REPLICA_SET, requiredReplicaSetName='atlas-wtm6mu-shard-0', serverSelector='null', clusterListeners='[]', serverSelectionTimeout='30000 ms', localThreshold='30000 ms'}, socketSettings=SocketSettings{connectTimeoutMS=10000, readTimeoutMS=0, receiveBufferSize=0, sendBufferSize=0}, heartbeatSocketSettings=SocketSettings{connectTimeoutMS=10000, readTimeoutMS=10000, receiveBufferSize=0, sendBufferSize=0}, connectionPoolSettings=ConnectionPoolSettings{maxSize=100, minSize=0, maxWaitTimeMS=120000, maxConnectionLifeTimeMS=0, maxConnectionIdleTimeMS=0, maintenanceInitialDelayMS=0, maintenanceFrequencyMS=60000, connectionPoolListeners=[], maxConnecting=2}, serverSettings=ServerSettings{heartbeatFrequencyMS=10000, minHeartbeatFrequencyMS=500, serverListeners='[]', serverMonitorListeners='[]'}, sslSettings=SslSettings{enabled=true, invalidHostNameAllowed=false, context=null}, applicationName='null', compressorList=[], uuidRepresentation=UNSPECIFIED, serverApi=ServerApi{version=V1, deprecationErrors=null, strict=null}, autoEncryptionSettings=null, contextProvider=null}
+2022-08-08 19:22:49.675 [Test worker] INFO  org.mongodb.driver.cluster - Cluster description not yet available. Waiting for 30000 ms before timing out
+2022-08-08 19:22:49.677 [cluster-ClusterId{value='62f18cb95cd9465548c042f6', description='null'}-srv-topictwister.rbqoldd.mongodb.net] INFO  org.mongodb.driver.cluster - Adding discovered server ac-9fcfmng-shard-00-01.rbqoldd.mongodb.net:27017 to client view of cluster
+2022-08-08 19:22:49.678 [cluster-ClusterId{value='62f18cb95cd9465548c042f6', description='null'}-srv-topictwister.rbqoldd.mongodb.net] INFO  org.mongodb.driver.cluster - Adding discovered server ac-9fcfmng-shard-00-00.rbqoldd.mongodb.net:27017 to client view of cluster
+2022-08-08 19:22:49.678 [cluster-ClusterId{value='62f18cb95cd9465548c042f6', description='null'}-srv-topictwister.rbqoldd.mongodb.net] INFO  org.mongodb.driver.cluster - Adding discovered server ac-9fcfmng-shard-00-02.rbqoldd.mongodb.net:27017 to client view of cluster
+2022-08-08 19:22:49.679 [cluster-ClusterId{value='62f18cb95cd9465548c042f6', description='null'}-srv-topictwister.rbqoldd.mongodb.net] DEBUG org.mongodb.driver.cluster - Updating cluster description to  {type=REPLICA_SET, servers=[{address=ac-9fcfmng-shard-00-00.rbqoldd.mongodb.net:27017, type=UNKNOWN, state=CONNECTING}, {address=ac-9fcfmng-shard-00-01.rbqoldd.mongodb.net:27017, type=UNKNOWN, state=CONNECTING}, {address=ac-9fcfmng-shard-00-02.rbqoldd.mongodb.net:27017, type=UNKNOWN, state=CONNECTING}]
+2022-08-08 19:22:49.679 [Test worker] INFO  org.mongodb.driver.cluster - No server chosen by com.mongodb.client.internal.MongoClientDelegate$1@5d4e13e1 from cluster description ClusterDescription{type=REPLICA_SET, connectionMode=MULTIPLE, serverDescriptions=[ServerDescription{address=ac-9fcfmng-shard-00-00.rbqoldd.mongodb.net:27017, type=UNKNOWN, state=CONNECTING}, ServerDescription{address=ac-9fcfmng-shard-00-01.rbqoldd.mongodb.net:27017, type=UNKNOWN, state=CONNECTING}, ServerDescription{address=ac-9fcfmng-shard-00-02.rbqoldd.mongodb.net:27017, type=UNKNOWN, state=CONNECTING}]}. Waiting for 30000 ms before timing out
+2022-08-08 19:22:49.822 [cluster-rtt-ClusterId{value='62f18cb95cd9465548c042f6', description='null'}-ac-9fcfmng-shard-00-02.rbqoldd.mongodb.net:27017] INFO  org.mongodb.driver.connection - Opened connection [connectionId{localValue:13, serverValue:10077}] to ac-9fcfmng-shard-00-02.rbqoldd.mongodb.net:27017
+2022-08-08 19:22:49.823 [cluster-rtt-ClusterId{value='62f18cb95cd9465548c042f6', description='null'}-ac-9fcfmng-shard-00-01.rbqoldd.mongodb.net:27017] INFO  org.mongodb.driver.connection - Opened connection [connectionId{localValue:9, serverValue:9031}] to ac-9fcfmng-shard-00-01.rbqoldd.mongodb.net:27017
+2022-08-08 19:22:49.824 [cluster-rtt-ClusterId{value='62f18cb95cd9465548c042f6', description='null'}-ac-9fcfmng-shard-00-00.rbqoldd.mongodb.net:27017] INFO  org.mongodb.driver.connection - Opened connection [connectionId{localValue:11, serverValue:158016}] to ac-9fcfmng-shard-00-00.rbqoldd.mongodb.net:27017
+2022-08-08 19:22:49.842 [cluster-ClusterId{value='62f18cb95cd9465548c042f6', description='null'}-ac-9fcfmng-shard-00-01.rbqoldd.mongodb.net:27017] INFO  org.mongodb.driver.connection - Opened connection [connectionId{localValue:8, serverValue:9031}] to ac-9fcfmng-shard-00-01.rbqoldd.mongodb.net:27017
+2022-08-08 19:22:49.842 [cluster-ClusterId{value='62f18cb95cd9465548c042f6', description='null'}-ac-9fcfmng-shard-00-01.rbqoldd.mongodb.net:27017] INFO  org.mongodb.driver.cluster - Monitor thread successfully connected to server with description ServerDescription{address=ac-9fcfmng-shard-00-01.rbqoldd.mongodb.net:27017, type=REPLICA_SET_SECONDARY, state=CONNECTED, ok=true, minWireVersion=0, maxWireVersion=13, maxDocumentSize=16777216, logicalSessionTimeoutMinutes=30, roundTripTimeNanos=115895900, setName='atlas-wtm6mu-shard-0', canonicalAddress=ac-9fcfmng-shard-00-01.rbqoldd.mongodb.net:27017, hosts=[ac-9fcfmng-shard-00-02.rbqoldd.mongodb.net:27017, ac-9fcfmng-shard-00-01.rbqoldd.mongodb.net:27017, ac-9fcfmng-shard-00-00.rbqoldd.mongodb.net:27017], passives=[], arbiters=[], primary='ac-9fcfmng-shard-00-02.rbqoldd.mongodb.net:27017', tagSet=TagSet{[Tag{name='nodeType', value='ELECTABLE'}, Tag{name='provider', value='GCP'}, Tag{name='region', value='SOUTH_AMERICA_EAST_1'}, Tag{name='workloadType', value='OPERATIONAL'}]}, electionId=null, setVersion=7, topologyVersion=TopologyVersion{processId=62f11ffb31cbc8e03d5fcbc3, counter=3}, lastWriteDate=Mon Aug 08 19:22:57 ART 2022, lastUpdateTimeNanos=584035567440200}
+2022-08-08 19:22:49.843 [cluster-ClusterId{value='62f18cb95cd9465548c042f6', description='null'}-ac-9fcfmng-shard-00-01.rbqoldd.mongodb.net:27017] DEBUG org.mongodb.driver.connection - Marking the connection pool for ServerId{clusterId=ClusterId{value='62f18cb95cd9465548c042f6', description='null'}, address=ac-9fcfmng-shard-00-01.rbqoldd.mongodb.net:27017} as 'ready'
+2022-08-08 19:22:49.843 [MaintenanceTimer-5-thread-1] DEBUG org.mongodb.driver.connection - Pruning pooled connections to ac-9fcfmng-shard-00-01.rbqoldd.mongodb.net:27017
+2022-08-08 19:22:49.844 [cluster-ClusterId{value='62f18cb95cd9465548c042f6', description='null'}-ac-9fcfmng-shard-00-01.rbqoldd.mongodb.net:27017] TRACE org.mongodb.driver.cluster - Handling description changed event for server ac-9fcfmng-shard-00-01.rbqoldd.mongodb.net:27017 with description ServerDescription{address=ac-9fcfmng-shard-00-01.rbqoldd.mongodb.net:27017, type=REPLICA_SET_SECONDARY, state=CONNECTED, ok=true, minWireVersion=0, maxWireVersion=13, maxDocumentSize=16777216, logicalSessionTimeoutMinutes=30, roundTripTimeNanos=115895900, setName='atlas-wtm6mu-shard-0', canonicalAddress=ac-9fcfmng-shard-00-01.rbqoldd.mongodb.net:27017, hosts=[ac-9fcfmng-shard-00-02.rbqoldd.mongodb.net:27017, ac-9fcfmng-shard-00-01.rbqoldd.mongodb.net:27017, ac-9fcfmng-shard-00-00.rbqoldd.mongodb.net:27017], passives=[], arbiters=[], primary='ac-9fcfmng-shard-00-02.rbqoldd.mongodb.net:27017', tagSet=TagSet{[Tag{name='nodeType', value='ELECTABLE'}, Tag{name='provider', value='GCP'}, Tag{name='region', value='SOUTH_AMERICA_EAST_1'}, Tag{name='workloadType', value='OPERATIONAL'}]}, electionId=null, setVersion=7, topologyVersion=TopologyVersion{processId=62f11ffb31cbc8e03d5fcbc3, counter=3}, lastWriteDate=Mon Aug 08 19:22:57 ART 2022, lastUpdateTimeNanos=584035567440200}
+2022-08-08 19:22:49.844 [cluster-ClusterId{value='62f18cb95cd9465548c042f6', description='null'}-ac-9fcfmng-shard-00-01.rbqoldd.mongodb.net:27017] DEBUG org.mongodb.driver.cluster - Updating cluster description to  {type=REPLICA_SET, servers=[{address=ac-9fcfmng-shard-00-00.rbqoldd.mongodb.net:27017, type=UNKNOWN, state=CONNECTING}, {address=ac-9fcfmng-shard-00-01.rbqoldd.mongodb.net:27017, type=REPLICA_SET_SECONDARY, TagSet{[Tag{name='nodeType', value='ELECTABLE'}, Tag{name='provider', value='GCP'}, Tag{name='region', value='SOUTH_AMERICA_EAST_1'}, Tag{name='workloadType', value='OPERATIONAL'}]}, roundTripTime=115.9 ms, state=CONNECTED}, {address=ac-9fcfmng-shard-00-02.rbqoldd.mongodb.net:27017, type=UNKNOWN, state=CONNECTING}]
+2022-08-08 19:22:49.844 [cluster-ClusterId{value='62f18cb95cd9465548c042f6', description='null'}-ac-9fcfmng-shard-00-01.rbqoldd.mongodb.net:27017] DEBUG org.mongodb.driver.cluster - Checking status of ac-9fcfmng-shard-00-01.rbqoldd.mongodb.net:27017
+2022-08-08 19:22:49.845 [Test worker] INFO  org.mongodb.driver.cluster - No server chosen by ReadPreferenceServerSelector{readPreference=primary} from cluster description ClusterDescription{type=REPLICA_SET, connectionMode=MULTIPLE, serverDescriptions=[ServerDescription{address=ac-9fcfmng-shard-00-00.rbqoldd.mongodb.net:27017, type=UNKNOWN, state=CONNECTING}, ServerDescription{address=ac-9fcfmng-shard-00-01.rbqoldd.mongodb.net:27017, type=REPLICA_SET_SECONDARY, state=CONNECTED, ok=true, minWireVersion=0, maxWireVersion=13, maxDocumentSize=16777216, logicalSessionTimeoutMinutes=30, roundTripTimeNanos=115895900, setName='atlas-wtm6mu-shard-0', canonicalAddress=ac-9fcfmng-shard-00-01.rbqoldd.mongodb.net:27017, hosts=[ac-9fcfmng-shard-00-02.rbqoldd.mongodb.net:27017, ac-9fcfmng-shard-00-01.rbqoldd.mongodb.net:27017, ac-9fcfmng-shard-00-00.rbqoldd.mongodb.net:27017], passives=[], arbiters=[], primary='ac-9fcfmng-shard-00-02.rbqoldd.mongodb.net:27017', tagSet=TagSet{[Tag{name='nodeType', value='ELECTABLE'}, Tag{name='provider', value='GCP'}, Tag{name='region', value='SOUTH_AMERICA_EAST_1'}, Tag{name='workloadType', value='OPERATIONAL'}]}, electionId=null, setVersion=7, topologyVersion=TopologyVersion{processId=62f11ffb31cbc8e03d5fcbc3, counter=3}, lastWriteDate=Mon Aug 08 19:22:57 ART 2022, lastUpdateTimeNanos=584035567440200}, ServerDescription{address=ac-9fcfmng-shard-00-02.rbqoldd.mongodb.net:27017, type=UNKNOWN, state=CONNECTING}]}. Waiting for 30000 ms before timing out
+2022-08-08 19:22:49.846 [cluster-ClusterId{value='62f18cb95cd9465548c042f6', description='null'}-ac-9fcfmng-shard-00-00.rbqoldd.mongodb.net:27017] INFO  org.mongodb.driver.connection - Opened connection [connectionId{localValue:10, serverValue:158016}] to ac-9fcfmng-shard-00-00.rbqoldd.mongodb.net:27017
+2022-08-08 19:22:49.846 [cluster-ClusterId{value='62f18cb95cd9465548c042f6', description='null'}-ac-9fcfmng-shard-00-00.rbqoldd.mongodb.net:27017] INFO  org.mongodb.driver.cluster - Monitor thread successfully connected to server with description ServerDescription{address=ac-9fcfmng-shard-00-00.rbqoldd.mongodb.net:27017, type=REPLICA_SET_SECONDARY, state=CONNECTED, ok=true, minWireVersion=0, maxWireVersion=13, maxDocumentSize=16777216, logicalSessionTimeoutMinutes=30, roundTripTimeNanos=120934200, setName='atlas-wtm6mu-shard-0', canonicalAddress=ac-9fcfmng-shard-00-00.rbqoldd.mongodb.net:27017, hosts=[ac-9fcfmng-shard-00-02.rbqoldd.mongodb.net:27017, ac-9fcfmng-shard-00-01.rbqoldd.mongodb.net:27017, ac-9fcfmng-shard-00-00.rbqoldd.mongodb.net:27017], passives=[], arbiters=[], primary='ac-9fcfmng-shard-00-02.rbqoldd.mongodb.net:27017', tagSet=TagSet{[Tag{name='nodeType', value='ELECTABLE'}, Tag{name='provider', value='GCP'}, Tag{name='region', value='SOUTH_AMERICA_EAST_1'}, Tag{name='workloadType', value='OPERATIONAL'}]}, electionId=null, setVersion=7, topologyVersion=TopologyVersion{processId=62e92f24b4aa7ac8428beb20, counter=5}, lastWriteDate=Mon Aug 08 19:22:57 ART 2022, lastUpdateTimeNanos=584035571578400}
+2022-08-08 19:22:49.847 [cluster-ClusterId{value='62f18cb95cd9465548c042f6', description='null'}-ac-9fcfmng-shard-00-00.rbqoldd.mongodb.net:27017] DEBUG org.mongodb.driver.connection - Marking the connection pool for ServerId{clusterId=ClusterId{value='62f18cb95cd9465548c042f6', description='null'}, address=ac-9fcfmng-shard-00-00.rbqoldd.mongodb.net:27017} as 'ready'
+2022-08-08 19:22:49.847 [cluster-ClusterId{value='62f18cb95cd9465548c042f6', description='null'}-ac-9fcfmng-shard-00-00.rbqoldd.mongodb.net:27017] TRACE org.mongodb.driver.cluster - Handling description changed event for server ac-9fcfmng-shard-00-00.rbqoldd.mongodb.net:27017 with description ServerDescription{address=ac-9fcfmng-shard-00-00.rbqoldd.mongodb.net:27017, type=REPLICA_SET_SECONDARY, state=CONNECTED, ok=true, minWireVersion=0, maxWireVersion=13, maxDocumentSize=16777216, logicalSessionTimeoutMinutes=30, roundTripTimeNanos=120934200, setName='atlas-wtm6mu-shard-0', canonicalAddress=ac-9fcfmng-shard-00-00.rbqoldd.mongodb.net:27017, hosts=[ac-9fcfmng-shard-00-02.rbqoldd.mongodb.net:27017, ac-9fcfmng-shard-00-01.rbqoldd.mongodb.net:27017, ac-9fcfmng-shard-00-00.rbqoldd.mongodb.net:27017], passives=[], arbiters=[], primary='ac-9fcfmng-shard-00-02.rbqoldd.mongodb.net:27017', tagSet=TagSet{[Tag{name='nodeType', value='ELECTABLE'}, Tag{name='provider', value='GCP'}, Tag{name='region', value='SOUTH_AMERICA_EAST_1'}, Tag{name='workloadType', value='OPERATIONAL'}]}, electionId=null, setVersion=7, topologyVersion=TopologyVersion{processId=62e92f24b4aa7ac8428beb20, counter=5}, lastWriteDate=Mon Aug 08 19:22:57 ART 2022, lastUpdateTimeNanos=584035571578400}
+2022-08-08 19:22:49.847 [MaintenanceTimer-6-thread-1] DEBUG org.mongodb.driver.connection - Pruning pooled connections to ac-9fcfmng-shard-00-00.rbqoldd.mongodb.net:27017
+2022-08-08 19:22:49.847 [cluster-ClusterId{value='62f18cb95cd9465548c042f6', description='null'}-ac-9fcfmng-shard-00-00.rbqoldd.mongodb.net:27017] DEBUG org.mongodb.driver.cluster - Updating cluster description to  {type=REPLICA_SET, servers=[{address=ac-9fcfmng-shard-00-00.rbqoldd.mongodb.net:27017, type=REPLICA_SET_SECONDARY, TagSet{[Tag{name='nodeType', value='ELECTABLE'}, Tag{name='provider', value='GCP'}, Tag{name='region', value='SOUTH_AMERICA_EAST_1'}, Tag{name='workloadType', value='OPERATIONAL'}]}, roundTripTime=120.9 ms, state=CONNECTED}, {address=ac-9fcfmng-shard-00-01.rbqoldd.mongodb.net:27017, type=REPLICA_SET_SECONDARY, TagSet{[Tag{name='nodeType', value='ELECTABLE'}, Tag{name='provider', value='GCP'}, Tag{name='region', value='SOUTH_AMERICA_EAST_1'}, Tag{name='workloadType', value='OPERATIONAL'}]}, roundTripTime=115.9 ms, state=CONNECTED}, {address=ac-9fcfmng-shard-00-02.rbqoldd.mongodb.net:27017, type=UNKNOWN, state=CONNECTING}]
+2022-08-08 19:22:49.847 [cluster-ClusterId{value='62f18cb95cd9465548c042f6', description='null'}-ac-9fcfmng-shard-00-00.rbqoldd.mongodb.net:27017] DEBUG org.mongodb.driver.cluster - Checking status of ac-9fcfmng-shard-00-00.rbqoldd.mongodb.net:27017
+2022-08-08 19:22:49.852 [cluster-ClusterId{value='62f18cb95cd9465548c042f6', description='null'}-ac-9fcfmng-shard-00-02.rbqoldd.mongodb.net:27017] INFO  org.mongodb.driver.connection - Opened connection [connectionId{localValue:12, serverValue:10056}] to ac-9fcfmng-shard-00-02.rbqoldd.mongodb.net:27017
+2022-08-08 19:22:49.852 [cluster-ClusterId{value='62f18cb95cd9465548c042f6', description='null'}-ac-9fcfmng-shard-00-02.rbqoldd.mongodb.net:27017] INFO  org.mongodb.driver.cluster - Monitor thread successfully connected to server with description ServerDescription{address=ac-9fcfmng-shard-00-02.rbqoldd.mongodb.net:27017, type=REPLICA_SET_PRIMARY, state=CONNECTED, ok=true, minWireVersion=0, maxWireVersion=13, maxDocumentSize=16777216, logicalSessionTimeoutMinutes=30, roundTripTimeNanos=122172500, setName='atlas-wtm6mu-shard-0', canonicalAddress=ac-9fcfmng-shard-00-02.rbqoldd.mongodb.net:27017, hosts=[ac-9fcfmng-shard-00-02.rbqoldd.mongodb.net:27017, ac-9fcfmng-shard-00-01.rbqoldd.mongodb.net:27017, ac-9fcfmng-shard-00-00.rbqoldd.mongodb.net:27017], passives=[], arbiters=[], primary='ac-9fcfmng-shard-00-02.rbqoldd.mongodb.net:27017', tagSet=TagSet{[Tag{name='nodeType', value='ELECTABLE'}, Tag{name='provider', value='GCP'}, Tag{name='region', value='SOUTH_AMERICA_EAST_1'}, Tag{name='workloadType', value='OPERATIONAL'}]}, electionId=7fffffff0000000000000050, setVersion=7, topologyVersion=TopologyVersion{processId=62f11c32490acc0755c4bc62, counter=6}, lastWriteDate=Mon Aug 08 19:22:57 ART 2022, lastUpdateTimeNanos=584035577326300}
+2022-08-08 19:22:49.852 [cluster-ClusterId{value='62f18cb95cd9465548c042f6', description='null'}-ac-9fcfmng-shard-00-02.rbqoldd.mongodb.net:27017] DEBUG org.mongodb.driver.connection - Marking the connection pool for ServerId{clusterId=ClusterId{value='62f18cb95cd9465548c042f6', description='null'}, address=ac-9fcfmng-shard-00-02.rbqoldd.mongodb.net:27017} as 'ready'
+2022-08-08 19:22:49.852 [cluster-ClusterId{value='62f18cb95cd9465548c042f6', description='null'}-ac-9fcfmng-shard-00-02.rbqoldd.mongodb.net:27017] TRACE org.mongodb.driver.cluster - Handling description changed event for server ac-9fcfmng-shard-00-02.rbqoldd.mongodb.net:27017 with description ServerDescription{address=ac-9fcfmng-shard-00-02.rbqoldd.mongodb.net:27017, type=REPLICA_SET_PRIMARY, state=CONNECTED, ok=true, minWireVersion=0, maxWireVersion=13, maxDocumentSize=16777216, logicalSessionTimeoutMinutes=30, roundTripTimeNanos=122172500, setName='atlas-wtm6mu-shard-0', canonicalAddress=ac-9fcfmng-shard-00-02.rbqoldd.mongodb.net:27017, hosts=[ac-9fcfmng-shard-00-02.rbqoldd.mongodb.net:27017, ac-9fcfmng-shard-00-01.rbqoldd.mongodb.net:27017, ac-9fcfmng-shard-00-00.rbqoldd.mongodb.net:27017], passives=[], arbiters=[], primary='ac-9fcfmng-shard-00-02.rbqoldd.mongodb.net:27017', tagSet=TagSet{[Tag{name='nodeType', value='ELECTABLE'}, Tag{name='provider', value='GCP'}, Tag{name='region', value='SOUTH_AMERICA_EAST_1'}, Tag{name='workloadType', value='OPERATIONAL'}]}, electionId=7fffffff0000000000000050, setVersion=7, topologyVersion=TopologyVersion{processId=62f11c32490acc0755c4bc62, counter=6}, lastWriteDate=Mon Aug 08 19:22:57 ART 2022, lastUpdateTimeNanos=584035577326300}
+2022-08-08 19:22:49.853 [cluster-ClusterId{value='62f18cb95cd9465548c042f6', description='null'}-ac-9fcfmng-shard-00-02.rbqoldd.mongodb.net:27017] INFO  org.mongodb.driver.cluster - Setting max election id to 7fffffff0000000000000050 from replica set primary ac-9fcfmng-shard-00-02.rbqoldd.mongodb.net:27017
+2022-08-08 19:22:49.853 [MaintenanceTimer-7-thread-1] DEBUG org.mongodb.driver.connection - Pruning pooled connections to ac-9fcfmng-shard-00-02.rbqoldd.mongodb.net:27017
+2022-08-08 19:22:49.853 [cluster-ClusterId{value='62f18cb95cd9465548c042f6', description='null'}-ac-9fcfmng-shard-00-02.rbqoldd.mongodb.net:27017] INFO  org.mongodb.driver.cluster - Setting max set version to 7 from replica set primary ac-9fcfmng-shard-00-02.rbqoldd.mongodb.net:27017
+2022-08-08 19:22:49.853 [cluster-ClusterId{value='62f18cb95cd9465548c042f6', description='null'}-ac-9fcfmng-shard-00-02.rbqoldd.mongodb.net:27017] INFO  org.mongodb.driver.cluster - Discovered replica set primary ac-9fcfmng-shard-00-02.rbqoldd.mongodb.net:27017
+2022-08-08 19:22:49.853 [cluster-ClusterId{value='62f18cb95cd9465548c042f6', description='null'}-ac-9fcfmng-shard-00-02.rbqoldd.mongodb.net:27017] DEBUG org.mongodb.driver.cluster - Updating cluster description to  {type=REPLICA_SET, servers=[{address=ac-9fcfmng-shard-00-00.rbqoldd.mongodb.net:27017, type=REPLICA_SET_SECONDARY, TagSet{[Tag{name='nodeType', value='ELECTABLE'}, Tag{name='provider', value='GCP'}, Tag{name='region', value='SOUTH_AMERICA_EAST_1'}, Tag{name='workloadType', value='OPERATIONAL'}]}, roundTripTime=120.9 ms, state=CONNECTED}, {address=ac-9fcfmng-shard-00-01.rbqoldd.mongodb.net:27017, type=REPLICA_SET_SECONDARY, TagSet{[Tag{name='nodeType', value='ELECTABLE'}, Tag{name='provider', value='GCP'}, Tag{name='region', value='SOUTH_AMERICA_EAST_1'}, Tag{name='workloadType', value='OPERATIONAL'}]}, roundTripTime=115.9 ms, state=CONNECTED}, {address=ac-9fcfmng-shard-00-02.rbqoldd.mongodb.net:27017, type=REPLICA_SET_PRIMARY, TagSet{[Tag{name='nodeType', value='ELECTABLE'}, Tag{name='provider', value='GCP'}, Tag{name='region', value='SOUTH_AMERICA_EAST_1'}, Tag{name='workloadType', value='OPERATIONAL'}]}, roundTripTime=122.2 ms, state=CONNECTED}]
+2022-08-08 19:22:49.853 [cluster-ClusterId{value='62f18cb95cd9465548c042f6', description='null'}-ac-9fcfmng-shard-00-02.rbqoldd.mongodb.net:27017] DEBUG org.mongodb.driver.cluster - Checking status of ac-9fcfmng-shard-00-02.rbqoldd.mongodb.net:27017
+2022-08-08 19:22:50.101 [Test worker] INFO  org.mongodb.driver.connection - Opened connection [connectionId{localValue:14, serverValue:10049}] to ac-9fcfmng-shard-00-02.rbqoldd.mongodb.net:27017
+2022-08-08 19:22:50.101 [Test worker] TRACE org.mongodb.driver.connection - Pooled connection connectionId{localValue:14, serverValue:10049} to server ServerId{clusterId=ClusterId{value='62f18cb95cd9465548c042f6', description='null'}, address=ac-9fcfmng-shard-00-02.rbqoldd.mongodb.net:27017} is now open
+2022-08-08 19:22:50.102 [Test worker] DEBUG org.mongodb.driver.protocol.command - Sending command '{"find": "users", "filter": {}, "$db": "login", "lsid": {"id": {"$binary": {"base64": "UtFpRE8TSxKw7UIaO4X1pA==", "subType": "04"}}}, "apiVersion": "1"}' with request id 26 to database login on connection [connectionId{localValue:14, serverValue:10049}] to server ac-9fcfmng-shard-00-02.rbqoldd.mongodb.net:27017
+2022-08-08 19:22:50.151 [Test worker] DEBUG org.mongodb.driver.protocol.command - Execution of command with request id 26 completed successfully in 48.97 ms on connection [connectionId{localValue:14, serverValue:10049}] to server ac-9fcfmng-shard-00-02.rbqoldd.mongodb.net:27017
+2022-08-08 19:22:50.151 [Test worker] DEBUG org.mongodb.driver.operation - Received batch of 6 documents with cursorId 0 from server ac-9fcfmng-shard-00-02.rbqoldd.mongodb.net:27017
+2022-08-08 19:22:50.151 [Test worker] TRACE org.mongodb.driver.connection - Checked in connection [connectionId{localValue:14, serverValue:10049}] to server ac-9fcfmng-shard-00-02.rbqoldd.mongodb.net:27017
+jesu
+seba
+random
+ruben
+eremaggi
+lgarcia
 ]]></system-out>
   <system-err><![CDATA[]]></system-err>
 </testsuite>
