@@ -6,7 +6,7 @@ import com.example.plugins.*
 
 fun main() {
     //embeddedServer(Netty, port = System.getenv("PORT").toInt()) {
-    embeddedServer(Netty, port = System.getenv($PORT) {
+    embeddedServer(Netty, port = System.getenv("PORT").toInt()) {
         configureRouting()
         configureSerialization()
     }.start(wait = true)
