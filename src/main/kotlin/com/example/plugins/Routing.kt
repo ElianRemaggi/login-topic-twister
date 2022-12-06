@@ -24,7 +24,7 @@ fun Application.configureRouting(
 
     routing {
         get("/") {
-            call.respondText("Hello World!")
+            call.respondText("Login-Topic-Twister-Backend. Conected to root")
         }
 
         get("/GetPlayerByID/{id}"){
