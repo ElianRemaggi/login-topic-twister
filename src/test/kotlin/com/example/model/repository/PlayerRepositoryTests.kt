@@ -31,11 +31,11 @@ internal class PlayerRepositoryTests {
 
         var player : Player?
         //Act
-        player = _playerRepository.FindPlayerById("lgarcia")
+        player = _playerRepository.FindPlayerById("garcia")
         println("id "+player?.getUserID())
 
         //Assert
-        Assert.assertEquals(player?.getPlayerData()?.getName(), "Luis")
+        Assert.assertEquals(player?.getPlayerData()?.getName(), "Luis!")
     }
 
     /*

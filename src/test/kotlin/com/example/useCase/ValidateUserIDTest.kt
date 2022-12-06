@@ -18,7 +18,7 @@ class ValidateUserIDTest {
         val validateUserID = ValidateUserID(userIDRepository)
         var response : Boolean
         //Act
-        response = validateUserID.Execute("eremaggi");
+        response = validateUserID.Execute("remaggi");
         //Accert
         Assert.assertTrue(response)
     }

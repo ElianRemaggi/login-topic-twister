@@ -21,7 +21,7 @@ class ApplicationTest {
         }
         client.get("/").apply {
             assertEquals(HttpStatusCode.OK, status)
-            assertEquals("Hello World!", bodyAsText())
+            assertEquals("Login-Topic-Twister-Backend. Conected to root", bodyAsText())
         }
     }
 }
